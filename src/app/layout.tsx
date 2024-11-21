@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import GlobalStyles from "@/styles/GlobalStyles";
-import Providers from "./Providers";
 import React from "react";
 
 export const metadata: Metadata = {
@@ -18,10 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <React.StrictMode>
-          <Providers>
-            <GlobalStyles />
             {children}
-          </Providers>
         </React.StrictMode>
       </body>
     </html>
